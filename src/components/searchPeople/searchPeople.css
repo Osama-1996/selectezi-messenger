@@ -1,0 +1,21 @@
+.searchicon{
+    position: absolute;
+    top: -31px;
+    right: 15px;
+}
+.search input:focus{
+    background: #F3F3F3;
+    box-shadow: none!important;
+    border: none!important;
+}
+.paraText{
+    color: #545454;
+    font-size: 13px;
+    max-width: 192px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.searchScroll{
+    height: 85vh;
+    overflow-y: auto;
+}

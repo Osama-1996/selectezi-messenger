@@ -1,9 +1,22 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "../components/navbar";
+// pages
+import UserDashboard from "../pages/userDashboard/index";
+import Messaging from "../pages/messaging";
+////////
+
 const Routing = () => {
     return (
         <Routes>
-            <Route path="/" element={< Navbar/>} />
+      /// pages
+      <Route path="/user-dashboard" element={< UserDashboard />} />
+      <Route path="/messeges" element={< Messaging />} />
+      //////
+            ////////
+            // components
+            
+            
+    /////////
+
         </Routes>
     )
 }

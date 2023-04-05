@@ -1,0 +1,67 @@
+.back-silver {
+    background: #F3F3F3
+}
+
+.back-lightblue {
+    background: rgba(116, 180, 224, 0.2);
+}
+
+.back-purple {
+    background: #EE7AAE;
+}
+
+.back-green {
+    background: #42D151;
+}
+
+.back-blue {
+    background: #00ACED;
+}
+.color-blue{
+    color: #00ACED;
+}
+.color-lightSilver{
+    color: #ADADAD;
+}
+.color-lightBlack{
+    color: #6A6A6A;
+}
+.text-black {
+    color: #000000;
+}
+
+.font-12 {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.para-sm {
+    color:#8A8A8A
+}
+
+.screenHeight {
+    height: 92vh;
+    margin-top: 59px;
+}
+::-webkit-scrollbar {
+    display: none!important;
+  }
+.box-shadow{
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}  
+.iconsSize{
+    width: 38px;
+}
+.profileIcons{
+    font-size: 35px!important;
+    padding-top: 2px;
+}

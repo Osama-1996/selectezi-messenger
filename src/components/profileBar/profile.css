@@ -1,0 +1,15 @@
+.paraText{
+    color: #545454;
+    font-size: 13px;
+    max-width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.textStyle{
+    color: #000000;
+    font-size: 18px;
+}
+.lightblue-back {
+    background: rgba(116, 180, 224, 0.2);
+    height: auto;
+}
