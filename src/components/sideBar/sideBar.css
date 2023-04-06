@@ -2,3 +2,7 @@
 font-size: 39px!important;
 color: #707070!important;
 }
+
+.active_icon{
+    color:red !important
+}

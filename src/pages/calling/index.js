@@ -1,8 +1,8 @@
 import SideBar from "../../components/sideBar/index"
-import SearchPeople from "../../components/searchPeople/index"
+import SearchPeople from "../calling/components/searchCallers/index"
 import ProfileData from "../../components/profileData/index"
 import {  Row, Col } from "react-bootstrap"
-const Messaging=()=>{
+const Calling=()=>{
     return(
         <Row>
         <Col lg={1} className="px-0"><SideBar /></Col> 
@@ -11,4 +11,4 @@ const Messaging=()=>{
         </Row>
     )
 }
-export default Messaging;
+export default Calling;

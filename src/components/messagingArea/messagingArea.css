@@ -1,3 +1,23 @@
-.messaging{
+.messaging {
     height: 73.5vh;
+}
+
+.textPlace {
+    height: 7vh;
+}
+
+.textareasize {
+    max-height: 45px;
+    outline: none !important;
+    resize: none;
+    border: none !important;
+}
+
+.textareasize:focus {
+    border: none !important;
+    outline: none !important;
+}
+.chattingArea{
+    height: 67vh;
+    overflow-y: auto;
 }

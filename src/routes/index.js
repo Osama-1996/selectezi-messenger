@@ -1,23 +1,17 @@
 import { Routes, Route } from "react-router-dom";
-// pages
 import UserDashboard from "../pages/userDashboard/index";
 import Messaging from "../pages/messaging";
-////////
-
+import Calling from "../pages/calling";
+import Layout from '../components/navbar/layout';
 const Routing = () => {
     return (
-        <Routes>
-      /// pages
-      <Route path="/user-dashboard" element={< UserDashboard />} />
-      <Route path="/messeges" element={< Messaging />} />
-      //////
-            ////////
-            // components
-            
-            
-    /////////
-
-        </Routes>
+        <Layout>
+            <Routes>
+                <Route path="/messeges" element={< Messaging />} />
+                <Route path="/calling" element={< Calling />} />
+                <Route path="/" element={< UserDashboard />} />
+            </Routes>
+        </Layout>
     )
 }
 export default Routing;

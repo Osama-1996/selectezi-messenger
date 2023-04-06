@@ -1,0 +1,16 @@
+.searchicon{
+    position: absolute;
+    top: -31px;
+    right: 15px;
+}
+.search input:focus{
+    background: #F3F3F3;
+    box-shadow: none!important;
+    border: none!important;
+}
+.fontdesc{
+    font-size: 13px;
+}
+.timegreen{
+    color: #1D800D;
+}

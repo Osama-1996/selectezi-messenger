@@ -1,4 +1,7 @@
 import {images} from "../constants/index"
+import PersonIcon from '@mui/icons-material/Person';
+import SmsIcon from '@mui/icons-material/Sms';
+import CallIcon from '@mui/icons-material/Call';
 export const SearchUsers=[
     {
         id:1,
@@ -108,3 +111,82 @@ export const ProfileSettings=[
         name:"Mail",
     }
 ]
+export const SearchCallers=[
+    {
+        id:1,
+        img:images.Person1,
+        name:"James",
+        desc:"@mehmet123.com",
+        time:"today 12:00 pm"
+    },
+    {
+        id:2,
+        img:images.Person2,
+        name:"mehmet buzdak",
+        desc:"@mehmet123.com",
+        time:"today 12:00 pm"
+    },
+    {
+        id:3,
+        img:images.Person1,
+        name:"mehmet buzdak",
+        desc:"@mehmet123.com",
+        time:"today 12:00 pm"
+    },
+    {
+        id:4,
+        img:images.Person2,
+        name:"mehmet buzdak",
+        desc:"@mehmet123.com",
+        time:"today 12:00 pm"
+    },
+    {
+        id:5,
+        img:images.Person1,
+        name:"mehmet buzdak",
+        desc:"@mehmet123.com",
+        time:"today 12:00 pm"
+    },
+    {
+        id:6,
+        img:images.Person1,
+        name:"mehmet buzdak",
+        desc:"@mehmet123.com",
+        time:"today 12:00 pm"
+    },
+    {
+        id:7,
+        img:images.Person1,
+        name:"mehmet buzdak",
+        desc:"@mehmet123.com",
+        time:"today 12:00 pm"
+    }
+    ,
+    {
+        id:8,
+        img:images.Person1,
+        name:"mehmet buzdak",
+        desc:"@mehmet123.com",
+        time:"today 12:00 pm"
+    }
+    ,
+    {
+        id:9,
+        img:images.Person1,
+        name:"mehmet buzdak",
+        desc:"@mehmet123.com",
+        time:"today 12:00 pm"
+    },
+    {
+        id:10,
+        img:images.Person1,
+        name:"mehmet buzdak",
+        desc:"@mehmet123.com",
+        time:"today 12:00 pm"
+    }
+]
+export const SideBars=[
+    { icon: <PersonIcon/>, route: '/', active: true },
+    {  icon: <SmsIcon/>, route: '/profile', active: false },
+    {  icon: <SmsIcon/>, route: '/settings', active: false }
+  ]

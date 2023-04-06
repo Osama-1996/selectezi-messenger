@@ -18,7 +18,7 @@
     background: #00ACED;
 }
 .color-blue{
-    color: #00ACED;
+    color: #00ACED!important;
 }
 .color-lightSilver{
     color: #ADADAD;
@@ -38,7 +38,9 @@
 .font-14 {
     font-size: 14px;
 }
-
+.font-17 {
+    font-size: 18px;
+}
 .font-20 {
     font-size: 20px;
 }
@@ -48,8 +50,8 @@
 }
 
 .screenHeight {
-    height: 92vh;
-    margin-top: 59px;
+    height: 93vh;
+    margin-top: 54px;
 }
 ::-webkit-scrollbar {
     display: none!important;
@@ -64,4 +66,11 @@
 .profileIcons{
     font-size: 35px!important;
     padding-top: 2px;
+}
+.searchScroll{
+    height: 85vh;
+    overflow-y: auto;
+}
+.imgSize img{
+    width: 65px;
 }
