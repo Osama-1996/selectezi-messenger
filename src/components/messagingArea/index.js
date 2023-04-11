@@ -13,14 +13,14 @@ const MessagesArea = () => {
                 </div>
             </div>
             <Row className="textPlace pt-1">
-                <Col lg={1} className="d-flex justify-content-center mt-2"><AttachFileIcon className="color-lightSilver profileIcons"/></Col>
-                <Col lg={9} className="ps-0"><textarea type="text" placeholder="Type your messege here." className="w-100 textareasize pt-2 mt-1" /></Col>
-                <Col lg={2} className="px-0">
+                <Col lg={1} md={1} className="d-flex justify-content-center mt-2"><AttachFileIcon className="color-lightSilver profileIcons"/></Col>
+                <Col lg={9} md={9} className="ps-0"><textarea type="text" placeholder="Type your messege here." className="w-100 textareasize pt-2 mt-1" /></Col>
+                <Col lg={2} md={2} className="px-0">
                     <div className="d-flex mt-2">
-                        <div className="ps-4">
+                        <div className="ps-2 ps-lg-4">
                             <SentimentSatisfiedAltIcon className="color-lightSilver profileIcons"/>
                         </div>
-                        <div className="ps-3">
+                        <div className="ps-1 ps-lg-3">
                             <SendIcon className="color-blue profileIcons" />
                         </div>
                     </div>

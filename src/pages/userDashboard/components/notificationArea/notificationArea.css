@@ -1,5 +1,6 @@
-.back-lightblue{
-    height: 83vh;
+.back-lightblueHeight{
+    height: 84.8vh;
+    overflow-y: auto;
 }
 .messageText{
     color: #B1B1B1;

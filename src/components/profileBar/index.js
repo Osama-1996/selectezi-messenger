@@ -13,10 +13,10 @@ const ProfileBar = ({setChangeData,}) => {
                 <div><h4>Jhon</h4></div>
                 <div><MoreVertIcon /></div>
             </div>
-            <Row className="pt-4 px-4">
+            <Row className="pt-4 px-3 px-lg-4">
 
-                <Col lg={3} className="pb-3"><img src={images.Person1} alt="" /> </Col>
-                <Col lg={9} className="ps-0  pe-0">
+                <Col lg={3} md={3} className="pb-3  "><div className="imgSize"><img src={images.Person1} alt="" /> </div></Col>
+                <Col lg={9} md={9} className="  pe-0">
                     <div>
                         <h6 className="mb-0">Designer</h6>
                         <p className="mb-0  paraText color-lightSilver">+921-12344-53543</p>
@@ -28,8 +28,8 @@ const ProfileBar = ({setChangeData,}) => {
             </Row>
             <div className="back-silver py-2 mb-3 "></div>
             {UserProfile?.map((data,index)=>(
-                <div   className={`d-flex pt-1 px-4 ${activeIndex === index ? 'lightblue-back' : ''}`}  onClick={()=>{setChangeData(index);setActiveIndex(index)}}>
-                <div><img src={data.img} alt="" /></div>
+                <div   className={`d-flex pt-1 px-2 px-md-3 px-lg-4 ${activeIndex === index ? 'lightblue-back' : ''}`}  onClick={()=>{setChangeData(index);setActiveIndex(index)}}>
+                <div><img src={data.img} alt="" className="sidebar-md"/></div>
                 <div><p className="textStyle pt-1 ps-3">{data.name}</p></div>
             </div>
             ))}

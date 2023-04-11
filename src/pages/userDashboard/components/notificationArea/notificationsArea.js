@@ -9,7 +9,7 @@ const NotificationsArea = () => {
                 <div><h4>Notifications</h4></div>
                 <div className="pt-1 color-blue"><CloseIcon /></div>
             </div>
-            <div className="back-lightblue notificationBack">
+            <div className="back-lightblue back-lightblueHeight notificationBack">
                 <div className="d-flex justify-content-between px-4 pt-4">
                     <div><h5>Jhon</h5></div>
                     <div> <Form>

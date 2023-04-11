@@ -14,3 +14,14 @@
 .timegreen{
     color: #1D800D;
 }
+@media (max-width: 849px) and (min-width: 768px){
+    .fontdesc {
+        font-size: 11px!important;
+        max-width: 220px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .size-md{
+        font-size: 15px!important;
+    }
+}

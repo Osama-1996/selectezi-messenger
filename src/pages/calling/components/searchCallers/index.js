@@ -15,15 +15,15 @@ const SearchCaller = () => {
             <Row className="pt-4 searchScroll">
                 {SearchCallers?.map((search) => (
                     <>
-                        <Col lg={3} className="pb-3 imgSize"><img src={search.img} alt="" /> </Col>
-                        <Col lg={7} className="ps-0 pt-1 pe-0">
+                        <Col lg={3} md={3} className="pb-3 imgSize"><img src={search.img} alt="" /> </Col>
+                        <Col lg={7} md={7} className=" pt-1 pe-0">
                             <div>
-                                <h4 className="mb-0 font-17">{search.name}</h4>
+                                <h4 className="mb-0 font-17 name-md">{search.name}</h4>
                                 <p className="mb-0  color-lightSilver fontdesc">{search.desc}</p>
                                 <p className="mb-0 fontdesc timegreen">{search.time}</p>
                             </div>
                         </Col>
-                        <Col lg={2} className="pt-3"><PhoneCallbackIcon className="text-success" /></Col>
+                        <Col lg={2} md={2} className="pt-3"><PhoneCallbackIcon className="text-success size-md" /></Col>
                     </>
 
 

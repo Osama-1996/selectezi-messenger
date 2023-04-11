@@ -10,7 +10,7 @@ const ProfileData = () => {
         <div className="screenHeight box-shadow">
             <Row className="pt-3 px-5 ">
 
-                <Col lg={6} className="pb-2">
+                <Col lg={6} md={7} className="pb-2">
                     <div className="d-flex">
                         <div className="rounded-circle">    <img src={images.Person1} alt="" className="profilePic" /></div>
                         <div className="ps-3">
@@ -20,7 +20,7 @@ const ProfileData = () => {
                         </div>
                     </div>
                 </Col>
-                <Col lg={6} className="ps-0  pe-0 ">
+                <Col lg={6} md={5} className="ps-0  pe-0 ">
                     <div className="d-flex justify-content-end pt-2">
                         <div><SearchIcon className="color-lightSilver profileIcons mx-1" /></div>
                         <div><LocalPhoneOutlinedIcon className="color-lightSilver profileIcons mx-1" /></div>

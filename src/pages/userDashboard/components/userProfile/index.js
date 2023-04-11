@@ -19,11 +19,11 @@ const UserProfile = () => {
 
                 {ProfileSettings?.map((data) => (
                     <>
-                        <Col lg={6}>    <div className="d-flex pt-1 ps-5 ">
+                        <Col lg={6} md={6}>    <div className="d-flex pt-1 ps-5 ">
                             <div><img src={data.img} alt="" className="iconsSize" /></div>
                             <div><p className="textStyle pt-1 ps-3">{data.name}</p></div>
                         </div></Col>
-                        <Col lg={6}><h6 className="color-blue pt-3 text-end pe-5">Designer</h6></Col>
+                        <Col lg={6} md={6}><h6 className="color-blue pt-3 text-end pe-5">Designer</h6></Col>
                     </>
 
                 ))}

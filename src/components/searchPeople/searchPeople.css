@@ -1,21 +1,77 @@
-.searchicon{
+.searchicon {
     position: absolute;
     top: -31px;
     right: 15px;
 }
-.search input:focus{
+
+.search input:focus {
     background: #F3F3F3;
-    box-shadow: none!important;
-    border: none!important;
+    box-shadow: none !important;
+    border: none !important;
 }
-.paraText{
+
+.paraText {
     color: #545454;
     font-size: 13px;
     max-width: 192px;
     white-space: nowrap;
     overflow: hidden;
 }
-.searchScroll{
+
+.searchScroll {
     height: 85vh;
     overflow-y: auto;
+}
+
+@media (max-width: 1178px) and (min-width: 992px) {
+    .imgSize img {
+        width: 57px !important;
+        padding-right: 3px;
+    }
+
+    .font-17 {
+        font-size: 15px !important;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 850px) {
+    .imgSize img {
+        width: 52px !important;
+        padding-right: 6px;
+    }
+
+    .font-17 {
+        font-size: 14px !important;
+    }
+
+    .name-md {
+        max-width: 220px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .done-md {
+        font-size: 18px!important;
+    }
+}
+@media (max-width: 849px) and (min-width: 768px) {
+    .imgSize img {
+        width: 48px !important;
+        padding-right: 9px;
+        margin-top: 7px;
+    }
+
+    .font-17 {
+        font-size: 13px !important;
+    }
+
+    .name-md {
+        max-width: 220px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .done-md {
+        font-size: 18px!important;
+    }
 }
