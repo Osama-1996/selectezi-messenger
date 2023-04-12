@@ -1,0 +1,5 @@
+.chattingArea-sm{
+    height: 74.1vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

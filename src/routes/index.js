@@ -1,15 +1,18 @@
 import { Routes, Route } from "react-router-dom";
-import UserDashboard from "../pages/userDashboard/index";
-import Messaging from "../pages/messaging";
-import Calling from "../pages/calling";
+import { Calling, Chatting, Dashboard, ChattingPeople,MobileChattingArea,SearchCallers } from "../pages/index"
 import Layout from '../components/navbar/layout';
 const Routing = () => {
     return (
         <Layout>
             <Routes>
-                <Route path="/messeges" element={< Messaging />} />
+                {/* mobiledesign */}
+                <Route path="/chatting" element={< MobileChattingArea />} />
+                <Route path="/chats" element={< ChattingPeople />} />
+                <Route path="/Callers" element={< SearchCallers />} />
+                {/* ///////// */}
+                <Route path="/messeges" element={< Chatting />} />
                 <Route path="/calling" element={< Calling />} />
-                <Route path="/" element={< UserDashboard />} />
+                <Route path="/" element={< Dashboard />} />
             </Routes>
         </Layout>
     )

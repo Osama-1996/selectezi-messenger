@@ -1,17 +1,19 @@
 import { Col, Row } from "react-bootstrap"
-import { images } from "../../constants/index"
+import { images } from "../../../../../constants/index"
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import SearchIcon from '@mui/icons-material/Search';
-import "./profileData.css"
-import MessagingArea from "../messagingArea/index"
-const ProfileData = () => {
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { useNavigate } from "react-router-dom";
+const UserData = () => {
+    const navigate=useNavigate()
     return (
-        <div className="screenHeight box-shadow">
-            <Row className="pt-3 px-5 ">
+        <div>
+            <Row className="pt-3 px-4 ">
 
-                <Col lg={6} md={7} className="pb-2">
+                <Col sm={6} xs={7} className="pb-2">
                     <div className="d-flex">
+                        <div><ArrowBackIcon className="color-lightSilver profileIcons mt-3" onClick={()=>navigate("/chats")}/></div>
                         <div className="rounded-circle">    <img src={images.Person1} alt="" className="profilePic" /></div>
                         <div className="ps-3">
                             <h5 className="mb-0">James</h5>
@@ -20,7 +22,7 @@ const ProfileData = () => {
                         </div>
                     </div>
                 </Col>
-                <Col lg={6} md={5} className="ps-0  pe-0 ">
+                <Col sm={6} xs={5} className="ps-0  pe-0 ">
                     <div className="d-flex justify-content-end pt-2">
                         <div><SearchIcon className="color-lightSilver profileIcons mx-1" /></div>
                         <div><LocalPhoneOutlinedIcon className="color-lightSilver profileIcons mx-1" /></div>
@@ -31,8 +33,7 @@ const ProfileData = () => {
 
 
             </Row>
-            <MessagingArea />
         </div>
     )
 }
-export default ProfileData;
+export default UserData;

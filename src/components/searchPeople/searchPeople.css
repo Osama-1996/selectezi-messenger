@@ -1,14 +1,4 @@
-.searchicon {
-    position: absolute;
-    top: -31px;
-    right: 15px;
-}
 
-.search input:focus {
-    background: #F3F3F3;
-    box-shadow: none !important;
-    border: none !important;
-}
 
 .paraText {
     color: #545454;
@@ -18,10 +8,7 @@
     overflow: hidden;
 }
 
-.searchScroll {
-    height: 85vh;
-    overflow-y: auto;
-}
+
 
 @media (max-width: 1178px) and (min-width: 992px) {
     .imgSize img {

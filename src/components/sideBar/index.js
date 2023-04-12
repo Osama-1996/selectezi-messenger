@@ -5,23 +5,25 @@ import CallIcon from '@mui/icons-material/Call';
 import "./sideBar.css"
 import { useNavigate } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
+
 const SideBar = () => {
-    const location=useLocation();
- 
-    const navigate=useNavigate()
-    const navigateHandler=(event)=>{
+    const location = useLocation();
+
+    const navigate = useNavigate()
+    const navigateHandler = (event) => {
         navigate(event)
     }
     return (
-        <div  className="back-silver screenHeight d-flex align-items-center flex-column">
+        <div className="back-silver screenHeight d-flex align-items-center flex-column">
+           
             <div>
-                <PersonIcon className={`iconsSize-sidebar mb-4 mt-3 ${location.pathname==="/" ? "color-blue":""}`} onClick={()=>navigateHandler("/")}/>
+                <PersonIcon className={`iconsSize-sidebar mb-4 mt-3 ${location.pathname === "/" ? "color-blue" : ""}`} onClick={() => navigateHandler("/")} />
             </div>
             <div>
-                <SmsIcon className={`iconsSize-sidebar mb-4  ${location.pathname==="/messeges" ? "color-blue":""}`}  onClick={()=>navigateHandler("/messeges")}/>
+                <SmsIcon className={`iconsSize-sidebar mb-4  ${location.pathname === "/messeges" ? "color-blue" : ""}`} onClick={() => navigateHandler("/messeges")} />
             </div>
             <div>
-                <CallIcon className={`iconsSize-sidebar  ${location.pathname==="/calling" ? "color-blue":""}`}  onClick={()=>navigateHandler("/calling")}/>
+                <CallIcon className={`iconsSize-sidebar  ${location.pathname === "/calling" ? "color-blue" : ""}`} onClick={() => navigateHandler("/calling")} />
             </div>
         </div>
     )

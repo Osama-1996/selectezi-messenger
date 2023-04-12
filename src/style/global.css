@@ -23,6 +23,13 @@
 .color-lightSilver{
     color: #ADADAD;
 }
+.textPlace {
+    height: 7.5vh;
+}
+.overflowhide{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
 .color-lightBlack{
     color: #6A6A6A;
 }
@@ -72,6 +79,32 @@
     overflow-y: auto;
     overflow-x: hidden;
 }
+.searchicon {
+    position: absolute;
+    top: -31px;
+    right: 15px;
+}
+
+.search input:focus {
+    background: #F3F3F3;
+    box-shadow: none !important;
+    border: none !important;
+}
 .imgSize img{
     width: 65px;
+}
+.logo {
+    font-weight: 900;
+    color: #0353A4;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer
+}
+@media (max-width: 767px) and (min-width: 320px){
+    .nav-absolute {
+        display: none!important;
+    }
+    .screenHeight{
+        margin-top: 0px!important;
+    }
 }
