@@ -2,6 +2,15 @@
     background: #F3F3F3
 }
 
+.desktop_view{
+    display: block !important;
+}
+.mobile_view{
+
+   
+    display: none !important;
+}
+
 .back-lightblue {
     background: rgba(116, 180, 224, 0.2);
 }
@@ -29,6 +38,14 @@
 .overflowhide{
     overflow-y: hidden;
     overflow-x: hidden;
+    padding: 0px;
+}
+.profileImg{
+    width: 160px;
+}
+.textDesc{
+    color: #B1B1B1;
+    font-size: 13px;
 }
 .color-lightBlack{
     color: #6A6A6A;
@@ -107,4 +124,12 @@
     .screenHeight{
         margin-top: 0px!important;
     }
+    .desktop_view{
+        display: none !important;
+    }
+    .mobile_view{
+
+        display: block !important;
+    }
 }
+

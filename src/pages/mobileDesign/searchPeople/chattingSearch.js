@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 const ChattingSearch = () => {
     const navigate = useNavigate()
     return (
-        <Container fluid className="overflowhide">
+        <Container fluid className="overflowhide ">
             <MobileHumberger />
 
             <div class="search pt-3 mx-5">

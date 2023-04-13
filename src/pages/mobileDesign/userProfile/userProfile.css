@@ -1,0 +1,8 @@
+.imgSize-sm img {
+    width: 65px;
+}
+@media (max-width: 360px) and (min-width: 320px){
+    .imgSize-sm img {
+        width: 57px;
+    }
+}

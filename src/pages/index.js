@@ -5,6 +5,9 @@ import Dashboard from "./userDashboard/index"
 import ChattingPeople from "./mobileDesign/searchPeople/chattingSearch"
 import MobileChattingArea from "./mobileDesign/chattingArea"
 import SearchCallers from "./mobileDesign/searchCallers"
+import MobileUserProfile from "./mobileDesign/userProfile"
+import ProfileSettings from "./mobileDesign/profileSettings"
+import MobileNotifications from "./mobileDesign/notifications"
 export {
     Calling,
     Chatting,
@@ -13,4 +16,7 @@ export {
     ChattingPeople,
     MobileChattingArea,
     SearchCallers,
+    MobileUserProfile,
+    ProfileSettings,
+    MobileNotifications,
 }

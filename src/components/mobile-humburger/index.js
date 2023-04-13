@@ -4,17 +4,13 @@ import { Row, Col } from "react-bootstrap"
 import PersonIcon from '@mui/icons-material/Person';
 import SmsIcon from '@mui/icons-material/Sms';
 import CallIcon from '@mui/icons-material/Call';
-import { useNavigate } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from "react";
 const MobileHumberger = () => {
     const location = useLocation();
-    const navigate = useNavigate()
     const [isOpen, setIsOpen] = useState(false)
-    const navigateHandler = (event) => {
-        navigate(event)
-    }
+
     return (
         <div>
             <Row className="pt-2 box-shadow pb-1">
@@ -22,7 +18,7 @@ const MobileHumberger = () => {
                     <MenuIcon className="menu " onClick={() => setIsOpen(true)} />
                 </Col>
                 <Col sm={10} xs={10} className="ps-0">
-                    <p className="logo m-0 pt-1">SELECTEZI MESSENGER</p>
+                    <p className="logo m-0 pt-2 pt-sm-1 pt-md-1 pt-lg-1">SELECTEZI MESSENGER</p>
                 </Col>
             </Row>
             {isOpen === true &&

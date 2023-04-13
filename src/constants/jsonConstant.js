@@ -1,7 +1,6 @@
 import {images} from "../constants/index"
 import PersonIcon from '@mui/icons-material/Person';
 import SmsIcon from '@mui/icons-material/Sms';
-import CallIcon from '@mui/icons-material/Call';
 export const SearchUsers=[
     {
         id:1,
@@ -81,14 +80,15 @@ export const UserProfile=[
         id:1,
         img:images.ProfileImg,
         name:"Profile",
+        route:"/"
     },
     {
-        id:1,
+        id:2,
         img:images.NotificationImg,
         name:"Notifications",
     },
     {
-        id:1,
+        id:3,
         img:images.PrivacyImg,
         name:"Privacy Settings",
     }

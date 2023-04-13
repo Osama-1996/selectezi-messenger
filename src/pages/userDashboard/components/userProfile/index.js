@@ -1,4 +1,4 @@
-import "./userProfile.css"
+
 import { Row, Col } from "react-bootstrap"
 import { images } from "../../../../constants/index"
 import { ProfileSettings } from "../../../../constants/jsonConstant"
