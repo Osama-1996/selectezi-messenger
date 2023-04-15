@@ -2,6 +2,12 @@
     background: #F3F3F3
 }
 
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 .desktop_view{
     display: block !important;
 }
@@ -35,11 +41,11 @@
 .textPlace {
     height: 7.5vh;
 }
-.overflowhide{
+/* .overflowhide{
     overflow-y: hidden;
     overflow-x: hidden;
     padding: 0px;
-}
+} */
 .profileImg{
     width: 160px;
 }

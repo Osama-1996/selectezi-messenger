@@ -11,15 +11,15 @@ const Messages = () => {
 
             </div>
 
-            <Row className="textPlace bg-white pt-1">
+            <Row className="textPlace bg-white pt-1 ps-2 ps-sm-0">
                 <Col sm={1} xs={1} className="d-flex justify-content-center mt-2"><AttachFileIcon className="color-lightSilver profileIcons" /></Col>
-                <Col sm={9} xs={9} className="ps-0"><textarea type="text" placeholder="Type your messege here." className="w-100 textareasize pt-2 mt-1" /></Col>
-                <Col sm={2} xs={2} className="px-0">
+                <Col sm={9} xs={8} className="ps-0"><textarea type="text" placeholder="Type your messege here." className="w-100 textareasize pt-2 mt-1" /></Col>
+                <Col sm={2} xs={3} className="px-0">
                     <div className="d-flex mt-2">
                         <div className="ps-2 ps-lg-4">
                             <SentimentSatisfiedAltIcon className="color-lightSilver profileIcons" />
                         </div>
-                        <div className="ps-2 ps-md-1 ps-lg-3">
+                        <div className="ps-0 ps-sm-2 ">
                             <SendIcon className="color-blue profileIcons" />
                         </div>
                     </div>

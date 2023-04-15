@@ -7,9 +7,11 @@ import { useNavigate } from 'react-router-dom';
 const ProfileSetting = () => {
     const navigate=useNavigate()
     return (
-        <Container fluid className='overflowhide '>
+        <div>
             <MobileHumberger />
-            <div className="d-flex align-items-center flex-column pt-2 pb-2 back-lightblue">
+            <Container fluid >
+              
+                <div className="d-flex align-items-center flex-column pt-2 pb-2 back-lightblue">
                 <div className='d-flex justify-content-start w-100 ps-4 ms-3'>
                     <ArrowBackIcon className="color-lightSilver profileIcons " onClick={()=>navigate("/user-profile")}/>
                 </div>
@@ -22,23 +24,27 @@ const ProfileSetting = () => {
             <div className="bg-white textDesc py-1 ps-5 pe-4">
                 <p className="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare urna in erat pulvinar.Phasellus ornare </p>
             </div>
-            <Row className="my-3 back-lightblue py-3">
+            <div className="my-3 back-lightblue py-3">
 
                 {ProfileSettings?.map((data) => (
-                    <>
+                    <Row>
                         <Col sm={6} xs={6}>    <div className="d-flex pt-1 ps-5 ">
                             <div><img src={data.img} alt="" className="iconsSize" /></div>
                             <div><p className="textStyle pt-1 ps-3">{data.name}</p></div>
                         </div></Col>
-                        <Col sm={6} xs={6}><h6 className="color-blue pt-3 text-end pe-5">Designer</h6></Col>
-                    </>
+                        <Col sm={6} xs={6} className=' pt-3 text-center pe-0'><h6 className="color-blue ">Designer</h6></Col>
+                    </Row>
 
                 ))}
-            </Row>
+            </div>
             <div className="bg-white  py-2 ">
 
             </div>
-        </Container>
+           
+         
+            </Container>
+            
+        </div>
     )
 }
 export default ProfileSetting;

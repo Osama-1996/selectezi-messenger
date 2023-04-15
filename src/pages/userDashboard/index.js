@@ -11,21 +11,14 @@ const MessengerNotifications = () => {
     console.log("data", changeData)
     return (
         <>
-            <Row className="desktop_view">
-                <Container fluid>
-                    <Row>
-                        <Col lg={1} md={1} className="px-0"><SideBar /></Col>
-                        <Col lg={3} md={3} className="px-0"><SearchPeople /></Col>
-                        <Col lg={5} md={5} className="px-0">{changeData === 0 ? <UserProfile /> : changeData === 1 ? <Notifications /> : ""}</Col>
-                        <Col lg={3} md={3} className="px-0"><ProfileBar setChangeData={setChangeData} changeData={changeData} /></Col>
-                    </Row>
-                </Container>
-            </Row>
-
-            <Row className="mobile_view">
-            <ChattingSearch />
-            </Row>
-          
+            <Container fluid >
+                <Row>
+                    <Col lg={1} md={1} className="px-0"><SideBar /></Col>
+                    <Col lg={3} md={3} className="px-0"><SearchPeople /></Col>
+                    <Col lg={5} md={5} className="px-0">{changeData === 0 ? <UserProfile /> : changeData === 1 ? <Notifications /> : ""}</Col>
+                    <Col lg={3} md={3} className="px-0"><ProfileBar setChangeData={setChangeData} changeData={changeData} /></Col>
+                </Row>
+            </Container>
         </>
 
 

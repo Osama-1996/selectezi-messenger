@@ -4,7 +4,7 @@ import "./chattingArea.css"
 import { Container } from "react-bootstrap";
 const MobileChattingArea = () => {
     return (
-        <Container fluid className="p-0 overflowhide">
+        <Container fluid>
             <div className="back-lightblue chatting-sm">
                 <UserData />
                 <Messages />

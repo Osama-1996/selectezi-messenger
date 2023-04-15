@@ -1,5 +1,12 @@
 .chattingArea-sm{
-    height: 74.1vh;
+    height: 77.1vh;
     overflow-y: auto;
     overflow-x: hidden;
+}
+@media (max-width: 456px) and (min-width: 320px){
+    .chattingArea-sm{
+        height: 78.3vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
 }
